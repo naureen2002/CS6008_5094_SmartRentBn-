@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/houseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="House Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textStatusValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pending ⏳"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tenantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tenant Name"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tenantEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tenantPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/btnWhatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat on WhatsApp"
+            android:textStyle="bold"
+            android:textColor="@color/lavender"
+            android:paddingTop="6dp" />
+
+        <!-- ✅ Landlord Message input before approval -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/landlordMessageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLandlordMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Message for tenant..."
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ✅ Tenant will see final message -->
+        <TextView
+            android:id="@+id/tenantMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Message: New rental application"
+            android:paddingTop="6dp" />
+
+        <TextView
+            android:id="@+id/applicationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:paddingTop="6dp" />
+
+        <!-- ✅ Buttons only for pending -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Approve"
+                android:textColor="@color/white"
+                android:background="@color/lavender" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reject"
+                android:textColor="@color/white"
+                android:background="@color/grey" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

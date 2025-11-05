@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "540399080525",
+    "firebase_url": "https://rent-connect-a779d-default-rtdb.firebaseio.com",
+    "project_id": "rent-connect-a779d",
+    "storage_bucket": "rent-connect-a779d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540399080525:android:ff267d79255c9f34063804",
+        "android_client_info": {
+          "package_name": "com.example.rent_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540399080525-n5bainhss7ke652tda9itav9k290u75e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-LHi1sQxgBCEGoDipc8b7Mz6uLk_o8dE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540399080525-n5bainhss7ke652tda9itav9k290u75e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

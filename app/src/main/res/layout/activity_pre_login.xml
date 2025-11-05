@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🌄 Background Image (fitted properly) -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="Background Image" />
+
+    <!-- 🌚 Dark overlay (controls how dark the background looks) -->
+    <View
+        android:id="@+id/dark_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000" />  <!-- 40% opacity black overlay -->
+
+    <!-- ✨ Foreground Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- 🏠 App Logo -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/baseline_house_24"
+            android:layout_gravity="center"
+            android:contentDescription="App Logo" />
+
+        <!-- 🩵 App Name -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RentConnect."
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/lavender"
+            android:layout_marginTop="8dp"
+            android:gravity="center" />
+
+        <!-- 🔐 Login Button -->
+        <Button
+            android:id="@+id/login_button_pre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius="20dp"
+            android:layout_marginHorizontal="30dp" />
+
+        <!-- 📝 Sign Up Button -->
+        <Button
+            android:id="@+id/signup_button_pre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius="20dp"
+            android:layout_marginHorizontal="30dp" />
+
+    </LinearLayout>
+</FrameLayout>

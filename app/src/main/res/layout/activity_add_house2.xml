@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- 🏡 House Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="House Information"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/lavender"
+            android:paddingBottom="8dp" />
+
+        <!-- 🏠 House Location / Title -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/house_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House Location and type"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+        <!-- 🛏️ Number of Rooms -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number_of_rooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Rooms"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+        <!-- 💰 Price -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+        <!-- 📝 Description -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:inputType="textMultiLine" />
+
+        <!-- 🏊 Amenities -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amenities (e.g., Pool, Garden)"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+        <!-- 📧 Email -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+        <!-- ☎️ Phone Number -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+
+        <!-- 🗺️ Add / Pick Property Location -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/select_location_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD PROPERTY LOCATION"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/selected_address_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No location selected yet"
+            android:textColor="@color/grey"
+            android:paddingTop="4dp"
+            android:paddingBottom="12dp"
+            android:textSize="14sp" />
+
+
+        <!-- 📷 Upload House Image -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload House Image"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/lavender"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upload_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD IMAGE"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius="10dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"
+            android:contentDescription="@string/item_image_description" />
+
+        <!-- 🖼️ Upload Property Gallery Images -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Property Images"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/lavender"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upload_detail_images_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD PROPERTY IMAGES"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius="10dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/detail_preview_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"
+            android:contentDescription="@string/item_image_description" />
+
+        <!-- 🪪 Upload IC / Passport -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload IC / Passport"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/lavender"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upload_id_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD IC / PASSPORT"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius="10dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/id_preview_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"
+            android:contentDescription="@string/upload_ic_passport" />
+
+        <!-- ✅ Submit -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT LISTING"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lavender"
+            android:layout_marginTop="24dp"
+            app:cornerRadius="12dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>

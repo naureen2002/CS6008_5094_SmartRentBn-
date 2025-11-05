@@ -1,0 +1,65 @@
+<resources>
+    <!-- 🏠 App info -->
+    <string name="app_name">rent-connect</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <!-- 🏡 Item-related -->
+    <string name="item_name">Item Name</string>
+    <string name="item_description">Item Description</string>
+    <string name="see_more">See More</string>
+    <string name="item_image_description">Image of the listed item</string>
+
+    <!-- 👤 Signup / Login -->
+    <string name="signup_title">Sign Up</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="login_redirect">Already a user? Login</string>
+
+    <!-- 👥 Role selection -->
+    <string name="role_select">Select Role</string>
+    <string name="role_tenant">Tenant</string>
+    <string name="role_landlord">Landlord</string>
+
+    <!-- 🔐 Login page -->
+    <string name="login_title">Login</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- 🏘️ House Listing -->
+    <string name="search_properties_hint">Search Properties</string>
+    <string name="house_information">House Information</string>
+    <string name="house_location">House Location</string>
+    <string name="number_of_rooms">Number of Rooms</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="amenities">Amenities (e.g., Pool, Garage, Garden)</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="upload_house_images">Upload House Images</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="submit_listing">Submit Listing</string>
+
+    <!-- 📄 Filter Section -->
+    <string name="enter_max_budget">Enter max budget</string>
+    <string name="filter_text">Filter</string>
+
+    <!-- 📅 Rental Form -->
+    <string name="rental_form_title">Rental Application Form</string>
+    <string name="full_name">Full Name</string>
+    <string name="date_of_birth">Date of Birth (DD/MM/YYYY)</string>
+    <string name="current_landlord_name">Current Landlord\'s Name</string>
+    <string name="landlord_phone">Landlord\'s Phone Number</string>
+    <string name="number_of_occupants">Number of Occupants</string>
+    <string name="have_pets">Do you have pets?</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="type_of_pets">Type of Pets</string>
+    <string name="number_of_pets">Number of Pets</string>
+    <string name="renting_date">When do you plan to rent?</string>
+    <string name="upload_ic_passport">Upload IC / Passport</string>
+
+    <!-- 🌍 Map Page -->
+    <string name="location_of_property">Location of Property</string>
+</resources>

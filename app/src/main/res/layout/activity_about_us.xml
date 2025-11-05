@@ -1,0 +1,37 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- About Us Title -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="@color/lavender"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Description -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to RentConnect! \n\nWe make renting in Brunei simple and reliable. Whether you’re looking for a cozy apartment in Bandar Seri Begawan or a family home in Tutong or Kuala Belait, our platform connects tenants and landlords quickly and safely.\n\nBuilt with the local community in mind, RentConnect aims to make finding and managing rentals easier for everyone while saving time, reducing stress, and helping you feel at home."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
