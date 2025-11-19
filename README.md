@@ -33,21 +33,21 @@ SmartRentBN is an Android rental management application. It allows users to brow
 ### 👥 Landlord & Tenant Login View
 | Combined Login View |
 |---------------------|
-| ![](screenshots/Landlord_Tenant%20view.png) |
+| ![](screenshots/landlord_tenant%20view.png) |
 
 ---
 
 ### 👤 Tenant View
 | Tenant Main View |
 |------------------|
-| ![](screenshots/Tenant%20View.png) |
+| ![](screenshots/tenant%20view.png) |
 
 ---
 
 ### 🏡 Landlord View
 | Landlord Features & House Management |
 |-------------------------------------|
-| ![](screenshots/Lanlord%20View.png) |
+| ![](screenshots/lanlord%20view.png) |
 
 ---
 
