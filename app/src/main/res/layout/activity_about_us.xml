@@ -1,9 +1,11 @@
+<!-- Using a ScrollView so the About Us page scrolls on smaller screens -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="@color/white">
 
+    <!-- Main container where I keep everything aligned nicely -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -11,7 +13,7 @@
         android:gravity="center_horizontal"
         android:padding="24dp">
 
-        <!-- About Us Title -->
+        <!-- Title of the page (About Us) -->
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,11 +24,11 @@
             android:gravity="center"
             android:paddingBottom="16dp" />
 
-        <!-- Description -->
+        <!-- The main description I wrote about SmartRent BN -->
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to RentConnect! \n\nWe make renting in Brunei simple and reliable. Whether you’re looking for a cozy apartment in Bandar Seri Begawan or a family home in Tutong or Kuala Belait, our platform connects tenants and landlords quickly and safely.\n\nBuilt with the local community in mind, RentConnect aims to make finding and managing rentals easier for everyone while saving time, reducing stress, and helping you feel at home."
+            android:text="Welcome to SmartRent BN! \n\nWe make renting in Brunei simple and reliable. Whether you’re looking for a cozy apartment in Bandar Seri Begawan or a family home in Tutong or Kuala Belait, our platform connects tenants and landlords quickly and safely.\n\nBuilt with the local community in mind, SmartRent BN aims to make finding and managing rentals easier for everyone while saving time, reducing stress, and helping you feel at home."
             android:textColor="@color/black"
             android:textSize="16sp"
             android:lineSpacingExtra="8dp"

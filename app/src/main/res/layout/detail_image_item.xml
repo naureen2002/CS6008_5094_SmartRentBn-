@@ -1,3 +1,4 @@
+<!-- Single image item used in the image slider / detail images RecyclerView -->
 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/detail_image"
     android:layout_width="match_parent"

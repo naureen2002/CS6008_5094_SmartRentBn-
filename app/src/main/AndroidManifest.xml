@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- This is my main manifest file where I set up all the permissions and register all the screens -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.rent_connect">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- ✅ Permissions -->
+
+    <!-- Basic permissions the app needs (internet & location) -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-    <!-- ✅ Camera and Storage permissions -->
+    <!-- Camera & gallery access for uploading the IC/passport image -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
-    <!-- ✅ For gallery and camera intent queries -->
+    <!-- These allow the image picker to work properly -->
     <queries>
         <intent>
             <action android:name="android.intent.action.GET_CONTENT" />
@@ -39,12 +40,12 @@
         android:requestLegacyExternalStorage="true"
         tools:targetApi="34">
 
-        <!-- ✅ Google Maps API Key -->
+        <!-- My Google Maps API key so the map works -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAuyObDq4g1RquSPODGgWO3DlIf9l4nN6g" />
 
-        <!-- ✅ FileProvider for IC/Passport uploads -->
+        <!-- File provider (needed so the app can open camera/gallery safely) -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -55,11 +56,9 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <!-- ✅ App Activities -->
-
-        <!-- Launcher -->
+        <!-- This is the first screen that opens when the app launches -->
         <activity
-            android:name=".PreLoginActivity"
+            android:name="com.example.smartrentbn.PreLoginActivity"
             android:exported="true"
             android:theme="@style/ThemeWithoutActionBar">
             <intent-filter>
@@ -68,82 +67,82 @@
             </intent-filter>
         </activity>
 
-        <!-- Authentication -->
+        <!-- Login and signup pages -->
         <activity
-            android:name=".LoginActivity"
+            android:name="com.example.smartrentbn.LoginActivity"
             android:exported="true"
             android:theme="@style/ThemeWithoutActionBar" />
 
         <activity
-            android:name=".SignupActivity"
+            android:name="com.example.smartrentbn.SignupActivity"
             android:exported="true"
             android:theme="@style/ThemeWithoutActionBar" />
 
-        <!-- Core App Screens -->
+        <!-- Main house listing screen -->
         <activity
-            android:name=".HouseListActivity"
+            android:name="com.example.smartrentbn.HouseListActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 
+        <!-- House details page -->
         <activity
-            android:name=".HouseDetailActivity"
+            android:name="com.example.smartrentbn.HouseDetailActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 
+        <!-- Tenant application form -->
         <activity
-            android:name=".RentalFormActivity"
+            android:name="com.example.smartrentbn.RentalFormActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 
-        <!-- ✅ ❗ NEW: FIX ADDED HERE ❗ ✅ -->
+        <!-- Landlord's page to see applications -->
         <activity
-            android:name=".TenantApplicationsActivity"
+            android:name="com.example.smartrentbn.TenantApplicationsActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 
-        <!-- Map / Location -->
+        <!-- Full map page -->
         <activity
-            android:name=".MapsActivity"
+            android:name="com.example.smartrentbn.MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps"
             android:theme="@style/ThemeWithActionBar" />
 
+        <!-- Small dialog map when choosing location -->
         <activity
-            android:name=".MapDialogActivity"
+            android:name="com.example.smartrentbn.MapDialogActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar"
-            android:label="Rent Connect" />
+            android:label="SmartRent BN" />
 
-        <!-- Communication -->
+        <!-- Add new house screen -->
         <activity
-            android:name=".ChatActivity"
+            android:name="com.example.smartrentbn.AddHouseActivity2"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 
-        <!-- Landlord Tools -->
+        <!-- Landlord dashboard screen -->
         <activity
-            android:name=".AddHouseActivity2"
+            android:name="com.example.smartrentbn.LandlordDashboardActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 
+        <!-- Base activity for shared navbar/header -->
         <activity
-            android:name=".LandlordDashboardActivity"
+            android:name="com.example.smartrentbn.BaseActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 
-        <!-- Info & Base Screens -->
+        <!-- Contact us page -->
         <activity
-            android:name=".BaseActivity"
+            android:name="com.example.smartrentbn.ContactUsActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 
+        <!-- About us page -->
         <activity
-            android:name=".ContactUsActivity"
-            android:exported="false"
-            android:theme="@style/ThemeWithActionBar" />
-
-        <activity
-            android:name=".AboutUsActivity"
+            android:name="com.example.smartrentbn.AboutUsActivity"
             android:exported="false"
             android:theme="@style/ThemeWithActionBar" />
 

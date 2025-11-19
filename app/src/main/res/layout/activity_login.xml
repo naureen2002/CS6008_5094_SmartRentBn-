@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main container for the Login screen -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,6 +12,7 @@
     android:background="@drawable/main2"
     tools:context=".LoginActivity">
 
+    <!-- Card container for login form -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +20,7 @@
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
 
+        <!-- Inner container holding all login UI components -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,6 +29,7 @@
             android:padding="24dp"
             android:background="@drawable/custom_edittext">
 
+            <!-- Title: Login -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,6 +39,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/lavender" />
 
+            <!-- Email input field -->
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -46,11 +52,13 @@
                 android:drawablePadding="8dp"
                 android:textColor="@color/black" />
 
+            <!-- Password container (with toggle button) -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp">
 
+                <!-- Password input field -->
                 <EditText
                     android:id="@+id/login_password"
                     android:layout_width="match_parent"
@@ -62,6 +70,7 @@
                     android:layout_toStartOf="@+id/password_toggle"
                     android:textColor="@color/black" />
 
+                <!-- Password visibility toggle icon -->
                 <ImageView
                     android:id="@+id/password_toggle"
                     android:layout_width="40dp"
@@ -73,6 +82,7 @@
                     android:contentDescription="Toggle Password Visibility" />
             </RelativeLayout>
 
+            <!-- Forgot password link -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,6 +93,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="16sp" />
 
+            <!-- Login button -->
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -93,6 +104,7 @@
                 android:backgroundTint="@color/lavender"
                 app:cornerRadius="20dp" />
 
+            <!-- Redirect to Sign Up -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -103,6 +115,8 @@
                 android:layout_marginTop="10dp"
                 android:textColor="@color/lavender"
                 android:textSize="18sp" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>

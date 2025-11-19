@@ -1,10 +1,11 @@
+<!-- Main container for the house listing screen -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <!-- Search Bar -->
+    <!-- Search bar for searching houses -->
     <SearchView
         android:id="@+id/search_property"
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
         android:textColorHint="@color/grey"
         app:queryBackground="@android:color/transparent" />
 
-    <!-- Budget Filter Section -->
+    <!-- Filter section with budget input and filter button -->
     <LinearLayout
         android:id="@+id/filter_section"
         android:layout_width="match_parent"
@@ -29,6 +30,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
+        <!-- Input field for max budget -->
         <EditText
             android:id="@+id/filter_budget_input"
             android:layout_width="0dp"
@@ -41,6 +43,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
 
+        <!-- Button to apply budget filter -->
         <Button
             android:id="@+id/apply_filter_button"
             android:layout_width="wrap_content"
@@ -51,7 +54,7 @@
             android:textColor="@color/white" />
     </LinearLayout>
 
-    <!-- ✅ Pull to refresh wrapper -->
+    <!-- Pull-to-refresh area for the house list -->
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_below="@id/filter_section"
@@ -59,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- RecyclerView inside wrapper -->
+        <!-- RecyclerView to display house items -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
@@ -67,10 +70,9 @@
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:layout_margin="8dp" />
-
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    <!-- Bottom Navigation -->
+    <!-- Bottom navigation bar for switching screens -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_alignParentBottom="true"

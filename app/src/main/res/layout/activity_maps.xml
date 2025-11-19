@@ -1,15 +1,18 @@
+<!-- Whole screen is inside a RelativeLayout since i want elements on top of the map -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Google Map Fragment -->
+
+    <!-- Google Maps fragment that shows the actual map -->
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Overlay: Search & Confirm -->
+
+    <!-- Search bar that sits on top of the map for finding places -->
     <LinearLayout
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
@@ -19,6 +22,7 @@
         android:background="#AAFFFFFF"
         android:layout_alignParentTop="true">
 
+        <!-- Input box where user types the location -->
         <EditText
             android:id="@+id/search_input"
             android:layout_width="0dp"
@@ -27,6 +31,7 @@
             android:hint="Search address or place"
             android:padding="10dp" />
 
+        <!-- Button that triggers the search action -->
         <Button
             android:id="@+id/search_button"
             android:layout_width="wrap_content"
@@ -34,6 +39,7 @@
             android:text="Search" />
     </LinearLayout>
 
+    <!-- Button the user clicks after choosing a point on the map -->
     <Button
         android:id="@+id/confirm_button"
         android:layout_width="match_parent"

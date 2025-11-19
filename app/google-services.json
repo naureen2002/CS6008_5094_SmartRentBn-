@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "540399080525",
-    "firebase_url": "https://rent-connect-a779d-default-rtdb.firebaseio.com",
-    "project_id": "rent-connect-a779d",
-    "storage_bucket": "rent-connect-a779d.firebasestorage.app"
+    "project_number": "942238936743",
+    "firebase_url": "https://smartrent-bn-default-rtdb.firebaseio.com",
+    "project_id": "smartrent-bn",
+    "storage_bucket": "smartrent-bn.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:540399080525:android:ff267d79255c9f34063804",
+        "mobilesdk_app_id": "1:942238936743:android:7673db0a58ec2187a63582",
         "android_client_info": {
-          "package_name": "com.example.rent_connect"
+          "package_name": "com.example.smartrentbn"
         }
       },
       "oauth_client": [
         {
-          "client_id": "540399080525-n5bainhss7ke652tda9itav9k290u75e.apps.googleusercontent.com",
+          "client_id": "942238936743-8au17svtc88c0vja070a1np7qlo1jpuu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA-LHi1sQxgBCEGoDipc8b7Mz6uLk_o8dE"
+          "current_key": "AIzaSyBT0wKZJ99lSF65ekp6YDzE0Watme84gqU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "540399080525-n5bainhss7ke652tda9itav9k290u75e.apps.googleusercontent.com",
+              "client_id": "942238936743-8au17svtc88c0vja070a1np7qlo1jpuu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

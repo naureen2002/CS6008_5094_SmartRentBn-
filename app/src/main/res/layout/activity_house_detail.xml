@@ -1,37 +1,39 @@
+<!-- Main container for the entire screen -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Scrollable content area for all house details -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp">
 
+        <!-- Vertical layout holding house details -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Property Image -->
+            <!-- Main house image -->
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/house1" />
+                android:scaleType="centerCrop" />
 
-            <!-- Property Title -->
+            <!-- House name/title -->
             <TextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cozy Townhouse on Summit Drive"
+                android:text="Cozy House"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:paddingTop="8dp"
                 android:textColor="#4A4A4A" />
 
-            <!-- Description Section -->
+            <!-- Description label -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,15 +42,15 @@
                 android:textStyle="bold"
                 android:paddingTop="8dp" />
 
+            <!-- House description text -->
             <TextView
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1 bedroom, shared bath and kitchen"
                 android:textSize="16sp"
-                android:paddingTop="8dp" />
+                android:paddingTop="4dp" />
 
-            <!-- Price Section -->
+            <!-- Price label -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,15 +59,15 @@
                 android:textStyle="bold"
                 android:paddingTop="8dp" />
 
+            <!-- Price value -->
             <TextView
                 android:id="@+id/price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$700"
                 android:textSize="16sp"
-                android:paddingTop="8dp" />
+                android:paddingTop="4dp" />
 
-            <!-- Details Section -->
+            <!-- Owner details label -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,15 +76,15 @@
                 android:textStyle="bold"
                 android:paddingTop="8dp" />
 
+            <!-- Owner details text -->
             <TextView
                 android:id="@+id/details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Spacious townhouse with a shared kitchen and bath"
                 android:textSize="16sp"
-                android:paddingTop="8dp" />
+                android:paddingTop="4dp" />
 
-            <!-- Amenities Section -->
+            <!-- Amenities label -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -91,15 +93,15 @@
                 android:textStyle="bold"
                 android:paddingTop="8dp" />
 
+            <!-- Amenities text -->
             <TextView
                 android:id="@+id/amenities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="• In-house laundry\n• Close to bus stop"
                 android:textSize="16sp"
-                android:paddingTop="8dp" />
+                android:paddingTop="4dp" />
 
-            <!-- Property Images Section -->
+            <!-- Additional images label -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,23 +110,63 @@
                 android:textStyle="bold"
                 android:paddingTop="8dp" />
 
+            <!-- RecyclerView for property images -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/detail_images_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp" />
 
+            <!-- Average rating section -->
+            <TextView
+                android:id="@+id/avgRatingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average Rating: -"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:textColor="#444" />
+
+            <!-- Heading for user rating -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate this House"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <!-- Rating bar for selecting stars -->
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:paddingTop="8dp" />
+
+            <!-- Button to submit rating -->
+            <Button
+                android:id="@+id/submitRatingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Rating"
+                android:background="@android:color/holo_orange_light"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp" />
+
         </LinearLayout>
 
     </ScrollView>
 
-    <!-- Apply + Map only ✅ -->
+    <!-- Bottom right corner action buttons -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true">
 
-        <!-- Apply Button -->
+        <!-- Apply button -->
         <Button
             android:id="@+id/apply_button"
             android:layout_width="wrap_content"
@@ -138,7 +180,7 @@
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
-        <!-- Map Button ABOVE Apply Button -->
+        <!-- Floating map button -->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/map_button"
             android:layout_width="wrap_content"
@@ -149,4 +191,5 @@
             android:src="@android:drawable/ic_dialog_map" />
 
     </RelativeLayout>
+
 </RelativeLayout>

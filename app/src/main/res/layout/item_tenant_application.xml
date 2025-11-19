@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Card layout for each tenant's submitted application (tenant side view) -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -9,11 +11,13 @@
     android:padding="12dp"
     android:background="@color/white">
 
+    <!-- Main vertical layout for all application details -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- Row showing house name and application status -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,6 +25,7 @@
             android:gravity="center_vertical"
             android:layout_marginBottom="4dp">
 
+            <!-- House name -->
             <TextView
                 android:id="@+id/txtHouseName"
                 android:layout_width="0dp"
@@ -31,6 +36,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/black" />
 
+            <!-- Application status: Pending / Approved / Rejected -->
             <TextView
                 android:id="@+id/txtStatus"
                 android:layout_width="wrap_content"
@@ -40,8 +46,7 @@
                 android:textSize="14sp" />
         </LinearLayout>
 
-        <!-- ❌ Message removed for tenant -->
-
+        <!-- Optional landlord reply message -->
         <TextView
             android:id="@+id/txtReply"
             android:layout_width="match_parent"
@@ -50,6 +55,7 @@
             android:textColor="@color/black"
             android:paddingTop="4dp" />
 
+        <!-- Submission date of tenant application -->
         <TextView
             android:id="@+id/txtSubmittedAt"
             android:layout_width="match_parent"
@@ -58,6 +64,20 @@
             android:textColor="@color/grey"
             android:textSize="12sp"
             android:paddingTop="6dp" />
+
+        <!-- Cancel application button (shown only if still pending) -->
+        <Button
+            android:id="@+id/btnCancelApplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Application"
+            android:textSize="14sp"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:visibility="gone" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

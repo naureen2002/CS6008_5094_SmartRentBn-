@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Card layout for each tenant application item -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -6,11 +8,13 @@
     android:padding="12dp"
     android:background="@color/white">
 
+    <!-- Main container for application details -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- House name -->
         <TextView
             android:id="@+id/houseName"
             android:layout_width="match_parent"
@@ -20,6 +24,7 @@
             android:textStyle="bold"
             android:textSize="16sp" />
 
+        <!-- Current status of tenant application -->
         <TextView
             android:id="@+id/textStatusValue"
             android:layout_width="match_parent"
@@ -29,6 +34,7 @@
             android:textColor="@color/yellow"
             android:paddingBottom="8dp" />
 
+        <!-- Tenant details -->
         <TextView
             android:id="@+id/tenantName"
             android:layout_width="match_parent"
@@ -52,6 +58,7 @@
             android:text="phone"
             android:textColor="@color/grey" />
 
+        <!-- WhatsApp quick contact -->
         <TextView
             android:id="@+id/btnWhatsapp"
             android:layout_width="wrap_content"
@@ -61,7 +68,7 @@
             android:textColor="@color/lavender"
             android:paddingTop="6dp" />
 
-        <!-- ✅ Landlord Message input before approval -->
+        <!-- Landlord message input field -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/landlordMessageLayout"
             android:layout_width="match_parent"
@@ -77,7 +84,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- ✅ Tenant will see final message -->
+        <!-- Message tenant submitted -->
         <TextView
             android:id="@+id/tenantMessage"
             android:layout_width="match_parent"
@@ -86,6 +93,7 @@
             android:text="Message: New rental application"
             android:paddingTop="6dp" />
 
+        <!-- Date of application -->
         <TextView
             android:id="@+id/applicationDate"
             android:layout_width="match_parent"
@@ -95,7 +103,7 @@
             android:textSize="12sp"
             android:paddingTop="6dp" />
 
-        <!-- ✅ Buttons only for pending -->
+        <!-- Approve & Reject buttons -->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"

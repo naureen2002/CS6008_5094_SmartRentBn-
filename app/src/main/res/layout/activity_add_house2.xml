@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Whole page is scrollable so users on smaller phones can see everything -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -6,13 +8,14 @@
     android:padding="16dp"
     android:background="@color/white">
 
+    <!-- Main container for all the input fields -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="8dp">
 
-        <!-- 🏡 House Information -->
+        <!-- Section title for house info -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +25,7 @@
             android:textColor="@color/lavender"
             android:paddingBottom="8dp" />
 
-        <!-- 🏠 House Location / Title -->
+        <!-- House location input -->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/house_location"
             android:layout_width="match_parent"
@@ -31,7 +34,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
 
-        <!-- 🛏️ Number of Rooms -->
+        <!-- Number of rooms input -->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/number_of_rooms"
             android:layout_width="match_parent"
@@ -41,7 +44,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
 
-        <!-- 💰 Price -->
+        <!-- Price input -->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/price"
             android:layout_width="match_parent"
@@ -51,17 +54,17 @@
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
 
-        <!-- 📝 Description -->
+        <!-- Description of the house -->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Description"
+            android:inputType="textMultiLine"
             android:textColor="@color/black"
-            android:textColorHint="@color/grey"
-            android:inputType="textMultiLine" />
+            android:textColorHint="@color/grey" />
 
-        <!-- 🏊 Amenities -->
+        <!-- Amenities input -->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/amenities"
             android:layout_width="match_parent"
@@ -70,7 +73,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
 
-        <!-- 📧 Email -->
+        <!-- Email input -->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
             android:layout_width="match_parent"
@@ -80,7 +83,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
 
-        <!-- ☎️ Phone Number -->
+        <!-- Phone number input -->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phone_number"
             android:layout_width="match_parent"
@@ -90,8 +93,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/grey" />
 
-
-        <!-- 🗺️ Add / Pick Property Location -->
+        <!-- Button to open map and pick location -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/select_location_button"
             android:layout_width="match_parent"
@@ -102,6 +104,7 @@
             app:cornerRadius="10dp"
             android:layout_marginTop="8dp" />
 
+        <!-- Shows the selected address after choosing on map -->
         <TextView
             android:id="@+id/selected_address_text"
             android:layout_width="match_parent"
@@ -112,8 +115,7 @@
             android:paddingBottom="12dp"
             android:textSize="14sp" />
 
-
-        <!-- 📷 Upload House Image -->
+        <!-- Section title for single house image -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,6 +126,7 @@
             android:paddingTop="16dp"
             android:paddingBottom="8dp" />
 
+        <!-- Button to upload one main image -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/upload_image_button"
             android:layout_width="match_parent"
@@ -135,6 +138,7 @@
             android:elevation="3dp"
             android:layout_marginBottom="8dp" />
 
+        <!-- Preview for the main image -->
         <ImageView
             android:id="@+id/image_preview"
             android:layout_width="match_parent"
@@ -144,7 +148,7 @@
             android:background="@color/grey"
             android:contentDescription="@string/item_image_description" />
 
-        <!-- 🖼️ Upload Property Gallery Images -->
+        <!-- Section title for extra property images -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -155,6 +159,7 @@
             android:paddingTop="16dp"
             android:paddingBottom="8dp" />
 
+        <!-- Button to upload multiple property images -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/upload_detail_images_button"
             android:layout_width="match_parent"
@@ -166,6 +171,7 @@
             android:elevation="3dp"
             android:layout_marginBottom="8dp" />
 
+        <!-- Preview for detail images -->
         <ImageView
             android:id="@+id/detail_preview_image"
             android:layout_width="match_parent"
@@ -175,7 +181,7 @@
             android:background="@color/grey"
             android:contentDescription="@string/item_image_description" />
 
-        <!-- 🪪 Upload IC / Passport -->
+        <!-- Section title for IC upload -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -186,6 +192,7 @@
             android:paddingTop="16dp"
             android:paddingBottom="8dp" />
 
+        <!-- Button to upload IC -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/upload_id_button"
             android:layout_width="match_parent"
@@ -197,6 +204,7 @@
             android:elevation="3dp"
             android:layout_marginBottom="8dp" />
 
+        <!-- Preview for IC image -->
         <ImageView
             android:id="@+id/id_preview_image"
             android:layout_width="match_parent"
@@ -206,7 +214,7 @@
             android:background="@color/grey"
             android:contentDescription="@string/upload_ic_passport" />
 
-        <!-- ✅ Submit -->
+        <!-- Submit button for the whole form -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/submit_button"
             android:layout_width="match_parent"
@@ -217,5 +225,6 @@
             android:layout_marginTop="24dp"
             app:cornerRadius="12dp"
             android:elevation="4dp" />
+
     </LinearLayout>
 </ScrollView>

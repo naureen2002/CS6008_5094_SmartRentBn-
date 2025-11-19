@@ -1,21 +1,24 @@
+<!-- Whole screen layout container -->
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Scroll view so the whole page can scroll on small screens -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp">
 
+        <!-- Main vertical layout for the contact form -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
-            <!-- 📝 Instruction Text -->
+            <!-- Small note telling users why they should contact -->
             <TextView
                 android:id="@+id/contact_note"
                 android:layout_width="match_parent"
@@ -27,7 +30,7 @@
                 android:paddingBottom="20dp"
                 android:textAlignment="center" />
 
-            <!-- Email Field -->
+            <!-- Email input field -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/email_field"
                 android:layout_width="match_parent"
@@ -35,6 +38,7 @@
                 android:hint="Email"
                 android:layout_marginBottom="16dp">
 
+                <!-- Actual EditText for email -->
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/email_input"
                     android:layout_width="match_parent"
@@ -42,13 +46,14 @@
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Message Field -->
+            <!-- Message text box -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Message"
                 android:layout_marginBottom="16dp">
 
+                <!-- Multi-line message input -->
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/message_input"
                     android:layout_width="match_parent"
@@ -59,7 +64,7 @@
                     android:scrollbars="vertical" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Send Button -->
+            <!-- Send button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/send_button"
                 android:layout_width="match_parent"

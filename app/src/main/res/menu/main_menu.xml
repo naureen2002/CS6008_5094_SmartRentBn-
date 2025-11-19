@@ -19,7 +19,7 @@
         android:title="Add House"
         app:showAsAction="never"/>
 
-    <!-- 👇 NEW: visible only for landlords (BaseActivity toggles it) -->
+
     <item
         android:id="@+id/action_applications"
         android:orderInCategory="103"

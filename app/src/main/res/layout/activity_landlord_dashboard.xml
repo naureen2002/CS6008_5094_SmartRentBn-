@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main container for the Tenant Applications screen -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="16dp"
@@ -6,6 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <!-- Header title showing Tenant Applications -->
     <TextView
         android:text="Tenant Applications"
         android:textSize="22sp"
@@ -16,6 +19,7 @@
         android:gravity="center"
         android:paddingBottom="8dp" />
 
+    <!-- RecyclerView that will display the list of all tenant applications -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/applicationsRecyclerView"
         android:layout_width="match_parent"

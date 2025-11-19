@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "rent-connect"
+rootProject.name = "SmartRentBN"
 include ':app'

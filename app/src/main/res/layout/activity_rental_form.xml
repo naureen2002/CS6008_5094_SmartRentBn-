@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main scroll view so the whole form can be scrolled -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -6,13 +8,14 @@
     android:padding="16dp"
     android:background="@color/white">
 
+    <!-- Main container for all form fields -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!-- Applicant Information -->
+        <!-- Section title for applicant info -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +25,7 @@
             android:textColor="@color/lavender"
             android:paddingBottom="8dp" />
 
-        <!-- Full Name -->
+        <!-- Full name input -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -35,7 +38,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Email -->
+        <!-- Email input -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -49,7 +52,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- ✅ WhatsApp Link -->
+        <!-- WhatsApp link field -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,7 +67,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Phone Number -->
+        <!-- Phone number input -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -78,7 +81,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Rental Date -->
+        <!-- Rental date picker input -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,7 +99,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Additional Information -->
+        <!-- Additional info section title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,7 +110,7 @@
             android:paddingTop="16dp"
             android:paddingBottom="8dp" />
 
-        <!-- Pets -->
+        <!-- Pets question label -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -116,6 +119,7 @@
             android:textColor="@color/black"
             android:paddingBottom="4dp" />
 
+        <!-- Pets radio buttons -->
         <RadioGroup
             android:id="@+id/pets_radio_group"
             android:layout_width="match_parent"
@@ -137,7 +141,7 @@
                 android:textColor="@color/black" />
         </RadioGroup>
 
-        <!-- Pet Type -->
+        <!-- Type of pets input field -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -150,7 +154,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Number of Pets -->
+        <!-- Number of pets input -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -164,7 +168,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Upload IC -->
+        <!-- Upload IC / Passport button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/upload_ic_button"
             android:layout_width="match_parent"
@@ -174,6 +178,7 @@
             android:textColor="@color/white"
             android:layout_marginTop="16dp" />
 
+        <!-- IC preview image -->
         <ImageView
             android:id="@+id/ic_preview_image"
             android:layout_width="match_parent"
@@ -182,7 +187,7 @@
             android:scaleType="centerCrop"
             android:layout_marginTop="8dp" />
 
-        <!-- Number of Occupants -->
+        <!-- Number of occupants input -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -197,7 +202,7 @@
                 android:textColorHint="@color/grey" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Submit Button -->
+        <!-- Final Apply Now button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/apply_now_button"
             android:layout_width="match_parent"
