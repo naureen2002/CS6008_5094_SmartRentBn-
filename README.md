@@ -25,7 +25,7 @@ SmartRentBN is an Android rental management application. It allows users to brow
 
 ---
 📱 App Screenshots 
-## 📱 App Screenshots
+## 📱 User Interface (UI)
 
 ### 👥 Landlord & Tenant Login View
 | Combined Login View |
