@@ -1,3 +1,5 @@
+![SmartRentBN Banner](banner.png)
+
 # SmartRentBN 📱🏠  
 
 SmartRentBN is an Android rental management application. It allows users to browse rental houses, view full property details, check locations on Google Maps, submit rental applications, and give ratings after staying.
